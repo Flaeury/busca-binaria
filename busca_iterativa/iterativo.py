@@ -1,13 +1,11 @@
 import time
+from random import randint
 
 # Inicia tempo de execução.
 inicio_execucao = time.time()
 
 # Vetor.
-vetor = [2, 3, 4, 7, 6, 8, 10, 9, 1, 5]
-
-# Ordena o vetor
-vetor.sort()
+vetor = sorted([randint(1, 1000) for _ in range(500000)])
 
 # Valor que será buscado
 x = 0
@@ -47,10 +45,9 @@ def busca_iterativa(vetor, x):
 # Aqui o código dará a posição que se encontra o valor buscado no vetor
 posicao_valor_buscado = busca_iterativa(vetor, x)
 
-
 print("\n")
 
-print("--BUSCA BINÁRIA ITERATIVA DO VETOR 1--")
+print("--BUSCA BINÁRIA ITERATIVA DO VETOR 0--")
 
 # Isso aqui para o caso do valor ter sido encontrado
 # if posicao_valor_buscado != -1:

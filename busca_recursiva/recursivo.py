@@ -1,13 +1,12 @@
 import time
+from random import randint
 
 # Inicia tempo de execução.
 inicio_execucao = time.time()
 
 # Vetor.
-vetor = [2, 3, 4, 7, 6, 8, 10, 9, 1, 5]
+vetor = sorted([randint(1, 1000) for _ in range(500000)])
 
-# Ordena o vetor
-vetor.sort()
 
 # Valor que será buscado
 x = 0
@@ -52,7 +51,7 @@ posicao_valor_buscado = busca_recursiva(vetor, 0, len(vetor)-1, x)
 
 print("\n")
 
-print("--BUSCA BINÁRIA RECURSIVA DO VETOR 1--")
+print("--BUSCA BINÁRIA RECURSIVA DO VETOR 0--")
 
 # Quando o valor for encontrado
 # if posicao_valor_buscado != -1:

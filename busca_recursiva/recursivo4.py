@@ -5,8 +5,7 @@ from random import randint
 inicio_execucao = time.time()
 
 # Vetor.
-vetor = sorted([randint(1, 100000) for _ in range(500000)])
-
+vetor = sorted([randint(1, 5000000) for _ in range(9000000)])
 
 # Valor que será buscado
 x = 0
@@ -51,7 +50,7 @@ posicao_valor_buscado = busca_recursiva(vetor, 0, len(vetor)-1, x)
 
 print("\n")
 
-print("--BUSCA BINÁRIA RECURSIVA DO VETOR 2--")
+print("--BUSCA BINÁRIA RECURSIVA DO VETOR 4--")
 
 # Quando o valor for encontrado
 # if posicao_valor_buscado != -1:
