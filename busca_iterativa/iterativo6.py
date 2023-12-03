@@ -5,7 +5,7 @@ from random import randint
 inicio_execucao = time.time()
 
 # Vetor.
-vetor = sorted([randint(1, 10000) for _ in range(10000)])
+vetor = sorted([randint(1, 100000) for _ in range(100000)])
 
 # Valor que será buscado
 x = 0
@@ -47,7 +47,7 @@ posicao_valor_buscado = busca_iterativa(vetor, x)
 
 print("\n")
 
-print("--BUSCA BINÁRIA ITERATIVA DO VETOR 4--")
+print("--BUSCA BINÁRIA ITERATIVA DO VETOR 6--")
 
 # Isso aqui para o caso do valor ter sido encontrado
 # if posicao_valor_buscado != -1:

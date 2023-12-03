@@ -5,7 +5,7 @@ from random import randint
 inicio_execucao = time.time()
 
 # Vetor.
-vetor = sorted([randint(1, 5000000) for _ in range(9000000)])
+vetor = sorted([randint(1, 10000) for _ in range(10000)])
 
 # Valor que será buscado
 x = 0
