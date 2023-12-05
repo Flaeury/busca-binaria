@@ -61,14 +61,16 @@ xIterativa = [10,
               50000000]
 
 
-def plotar_grafico(xIterativa, yIterativa, xRecursiva, yRecursiva):
-    codigos_iterativos = [10, 50, 100, 500, 1000, 5000,
-                          10000, 50000, 100000,  500000, 1000000, 5000000, 10000000, 50000000]
-    codigos_recursivos = [10, 50, 100, 500, 1000, 5000,
-                          10000, 50000, 100000,  500000, 1000000, 5000000, 10000000, 50000000]
+def plotar_grafico(yIterativa, yRecursiva):
+    tamanho_vetores_iterativos = [10, 50, 100, 500, 1000, 5000,
+                                  10000, 50000, 100000,  500000, 1000000, 5000000, 10000000, 50000000]
+    tamanho_vetores_recursivos = [10, 50, 100, 500, 1000, 5000,
+                                  10000, 50000, 100000,  500000, 1000000, 5000000, 10000000, 50000000]
 
-    plt.plot(codigos_iterativos, yIterativa, label='Iterativo', marker='o')
-    plt.plot(codigos_recursivos, yRecursiva, label='Recursivo', marker='x')
+    plt.plot(tamanho_vetores_iterativos, yIterativa,
+             label='Iterativo', marker='o')
+    plt.plot(tamanho_vetores_recursivos, yRecursiva,
+             label='Recursivo', marker='x')
 
     plt.title('Tempo de Execução de Busca Binária Recursiva e Iterativa')
     plt.xlabel('Tamanho do vetor')
