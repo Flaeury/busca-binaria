@@ -64,4 +64,4 @@ print("--BUSCA BINÁRIA RECURSIVA DO VETOR 0--")
 fim_execucao = time.time()
 tempo_execucao = fim_execucao - inicio_execucao
 
-# print(f"Tempo de execução foi: {tempo_execucao:.10f} segundos.")
+# print(f"Tempo de execução foi: {tempo_execucao:.20f} segundos.")
